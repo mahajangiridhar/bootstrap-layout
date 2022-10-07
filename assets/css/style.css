@@ -1,0 +1,162 @@
+.carousel-item, .carousel-item, .carousel-item img{
+    height: 60vh;
+}
+.carousel-item img{
+    object-fit: cover;
+}
+#showcase .carousel-caption{
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#showcase .carousel-caption h5{
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+#showcase .carousel-caption p{
+    font-size: 14px;
+}
+
+/* =================navbar CSS=============== */
+.header .nav-link{
+    text-transform: uppercase;
+}
+.header .nav-item.active{
+    border-left: 1px solid orange;
+}
+
+
+/* =====================homeIcon css================= */
+
+.iconThumbnail>i{
+    font-size: 56px;
+}
+.iconThumbnail>h3{
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+/* ===================get ready section starts here===================== */
+.getready, .video{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-size: cover;
+    position: relative;
+}
+.getready{
+    background-image: url(../images/lights.jpg);
+}
+.getready::before, .video::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+.laptop-content{
+    align-self: center;
+}
+
+/* ===================video section starts here===================== */
+.video{
+    background-image: url(../images/media.jpg);
+}
+.playBtn:link, .playBtn:visited{
+    color: #fff;
+    font-size: 48px;
+}
+
+
+/* <!-- ============================sign up section starts here============================== --> */
+/* .signUp{
+    background-color: ;
+} */
+.signUpBtn a, .signUpBtn a:link, .signUpBtn a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* <!-- ============================copyRight section starts here============================== --> */
+
+
+.copyRight{
+    background-color: black;
+}
+.owl-nav{
+    display: none;
+}
+
+/* =====================services css starts here================ */
+.plan .card{
+    transition: all 0.4s ease-in-out;
+}
+.plan .card:hover{
+    transform: translateY(-20px) scaleY(1.02);
+}
+.fa-check{
+    font-size: 48px;
+}
+.featureOne{
+    font-weight: 700;
+}
+.faq .card{
+    background-color: #444;
+    border: 0px solid #444;
+}
+.faq .card .btn{
+    box-shadow: none;
+}
+
+/* ===========================blogs css starts here===================== */
+
+.writerPara{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+@media all and (max-width: 760px){
+    .plan .card{
+        margin: 16px 0;
+    }
+    .person>.profilePara{
+        margin-bottom: 50px;
+    }
+}
+
+/* ==========================contact css starts here============================ */
+.profile{
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+
+@media all and (min-width:768px){
+    .testimonials{
+        position: relative;
+    }
+    
+    button.owl-prev i{
+        font-size: 48px;
+        position: absolute;
+        right: 100%;
+        top: 2px;
+    }
+    button.owl-next i{
+        font-size: 48px;
+        position: absolute;
+        left: 100%;
+        top: 2px;
+    }
+    .owl-nav{
+        display: block;
+    }
+}
+
+
+
